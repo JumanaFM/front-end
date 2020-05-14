@@ -1,0 +1,11 @@
+.about {
+  display: block;
+  padding: 20px;
+  background-color: yellow;
+}
+
+.personal-img {
+  width: auto;
+  text-align: end;
+  position: relative;
+}

@@ -2,25 +2,33 @@
   display: grid;
   gap: 20px;
   padding: 20px;
-  grid-template-rows: 150px auto;
+  grid-template-rows: auto auto;
   grid-area: main;
 }
 
 .post-head {
   display: flex;
   justify-content: start;
-  background-color: hotpink;
+  background-color: rgb(231, 231, 83);
 }
 
-.post-head img{
-    height: 100%;
-    width: auto;
-    
-    }
+.avatar {
+  height: 100px;
+  width: 100px;
+  padding: 20px;
+}
+
+.share {
+  height: 40px;
+  width: 40px;
+  padding: 20px;
+  text-align: left;
+}
+
 .post-body {
   text-align: center;
   background-color: yellow;
-  padding: 20px;
+  padding: 10px;
 }
 
 .post-body img {
@@ -28,7 +36,9 @@
 }
 
 .post-body p {
-    text-align: left;
-   
+  text-align: left;
 }
 
+.post-info h3 {
+  font-size: 16px;
+}

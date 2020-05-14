@@ -1,6 +1,7 @@
 /* this is the main style sheet. The general theme is specified here. */
 @import "home.css";
 @import "post.css";
+@import "about.css";
 @import url("https://fonts.googleapis.com/css2?family=Jost&display=swap");
 
 html,
@@ -15,7 +16,7 @@ body {
   display: grid;
   /* grid-template-columns: repeat(3, 1fr); */
   grid-template-columns: 100%;
-  grid-template-rows: 150px auto 60px;
+  grid-template-rows: 150px auto 75px;
   grid-template-areas:
     "hd hd hd hd hd hd hd hd"
     "main main main main main main main main"
@@ -34,12 +35,11 @@ body {
 }
 
 header {
-
   display: contents;
 }
 
 .navbar {
-    grid-area: hd;
+  grid-area: hd;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -50,8 +50,12 @@ header {
 }
 
 .subscribe-btn {
-    background-color: teal;
-    padding: 10px;
+  background-color: teal;
+  padding: 10px;
+  border: none;
+  color: blanchedalmond;
+  font-weight: 600;
+  font-style: italic;
 }
 
 a {
@@ -80,6 +84,6 @@ footer {
   padding: 20px 20px;
 }
 
-main{
-    display: contents;
+main {
+  display: contents;
 }
