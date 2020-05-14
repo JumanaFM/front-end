@@ -1,2 +1,85 @@
 /* this is the main style sheet. The general theme is specified here. */
-@import 'home.css';
+@import "home.css";
+@import "post.css";
+@import url("https://fonts.googleapis.com/css2?family=Jost&display=swap");
+
+html,
+body {
+  height: 100%;
+  font-family: "Jost", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  /* grid-template-columns: repeat(3, 1fr); */
+  grid-template-columns: 100%;
+  grid-template-rows: 150px auto 60px;
+  grid-template-areas:
+    "hd hd hd hd hd hd hd hd"
+    "main main main main main main main main"
+    "ft ft ft ft ft ft ft ft";
+  height: 100%;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.item {
+  font-size: 16px;
+  padding: 5px 10px;
+}
+
+header {
+
+  display: contents;
+}
+
+.navbar {
+    grid-area: hd;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: #0ff;
+  padding: 0 20px;
+}
+
+.subscribe-btn {
+    background-color: teal;
+    padding: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.item a {
+  transition: color 0.7s;
+}
+
+.item a:hover {
+  color: gray;
+  transition: color 0.7s;
+}
+
+.logo {
+  font-size: 24px;
+}
+
+footer {
+  grid-area: ft;
+  background-color: blueviolet;
+  display: flex;
+  justify-content: center;
+  padding: 20px 20px;
+}
+
+main{
+    display: contents;
+}

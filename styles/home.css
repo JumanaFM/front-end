@@ -1,43 +1,14 @@
-html, body {
-  height: 100%;
-}
-
-.container {
-  /* Step 1: Set display to grid */
-  display: grid;
-  /* Step 2: setup rows amd columns */
-  /* grid-template-columns: repeat(3, 1fr); */
-  grid-template-columns: auto;
-  grid-template-rows: 80px auto 30px;
-  grid-template-areas:
-    "hd hd hd hd hd hd hd hd"
-    "main main main main main main main main"
-    "ft ft ft ft ft ft ft ft";
-  border: 2px solid yellow;
-}
-
 .content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 30px;
+  grid-template-rows: repeat(auto-fit, 1fr);
+  gap: 20px;
   padding: 20px;
   justify-items: center;
   justify-content: center;
   align-items: flex-start;
   grid-area: main;
-}
-.box {
-  border: 1px solid red;
-}
-
-/* Assign grid area below */
-.header {
-  grid-area: hd;
-  background-color: cadetblue;
-}
-.footer {
-  grid-area: ft;
-  background-color: blueviolet;
+  background-color: chartreuse;
 }
 
 .card {
@@ -45,8 +16,20 @@ html, body {
   text-align: center;
   background: white;
   border: 1px solid black;
+  height: 200px;
+  width: 200px;
+  vertical-align: middle;
 }
 
-img {
+.card img {
   width: 100%;
+  height: 60%;
+  margin-bottom: 5px;
+}
+
+.card h2 {
+font-size: 18px;
+  vertical-align: middle;
+  display: inline;
+  padding: 20px 2px 0 2px;
 }
