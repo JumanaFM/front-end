@@ -1,6 +1,6 @@
-# front-end
-[Blog](https://jumanafm.github.io/front-end/blog)
+list of projects to solidfy my JS knowledge.
 
-For this work I challenged myself to design a responsive design without using media query! :D and I did it! Responsive webpages without media query! 
+- [Blog](https://jumanafm.github.io/front-end/blog)
+- [Dynamic Landing Page](https://jumanafm.github.io/front-end/landing-page)
 
-Images used in this work are from the web and are only used for the purposes of this project and will be replaced if I make my website public.
+
