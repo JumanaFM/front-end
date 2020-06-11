@@ -35,6 +35,10 @@ function createList(){
         list_elements.push(list_element);
     }
     return list_elements;
+    console.log("createList()");
+    console.log(list_elements);
+    
+    
 }
 
 function createNavElements(list_elements){
@@ -48,6 +52,9 @@ function createNavElements(list_elements){
         elements.push(li);
     }
       return elements;
+      console.log("creatNavElements()");
+      console.log(elements);
+      
         
     }
 
@@ -66,6 +73,10 @@ function buildNav() {
     let nav_elements = createNavElements(createList());
     createActiveEventListeners(nav_elements);
     navbar.append(... nav_elements);
+    console.log("buildNav()");
+    console.log(nav_elements);
+    
+    
     
 }
 
