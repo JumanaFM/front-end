@@ -19,7 +19,6 @@
 */
 const navbar= document.getElementById("navbar__list");
 const sections= document.querySelectorAll("section");
-
 /**
  * End Global Variables
  * Start Helper Functions
@@ -82,17 +81,33 @@ function buildNav() {
 
 
 // Add class 'active' to section when near top of viewport
-function createActiveEventListeners(elements){
-for (const i of elements) {
-   i.addEventListener("click", function(){
-    console.log(i);
+function createActiveEventListeners(nav_elements){
+    console.log("inside createActiveEventlisteners");
+    console.log(sections.length)
     
-   });
+for (let index = 0; index < nav_elements.length; index++) {
+    console.log("in the loop");
+    nav_elements[index].addEventListener("click", function(){  
+        sections.forEach(function(section) {
+            section.removeAttribute("class");
+          })
+
+        sections[index].setAttribute("class","active-class")
+        console.log("in the event: " + index);
+        
+        
+       });
+    } 
+    
 }
-}
+
+
 
 // Scroll to anchor ID using scrollTO event
 
+
+
+buildNav();
 
 /**
  * End Main Functions
