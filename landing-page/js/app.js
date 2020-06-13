@@ -33,6 +33,21 @@ function buildNav() {
   navbar.append(...nav_elements);
 }
 
+
+// Add class 'active' to section when it is near top of viewport
+function makeActiveOnScroll() {
+  for (const section of sections) {
+    const box = section.getBoundingClientRect();
+    // You can play with the values in the "if" condition to further make it more accurate. 
+    if (box.top <= 150 && box.bottom >= 150) {
+      section.setAttribute("class", "active-class");
+    } else {
+      section.removeAttribute("class");
+    }
+  }
+}
+
+
 function createActiveEventListeners(nav_elements) {
   let top, left;
 
@@ -55,6 +70,10 @@ function createActiveEventListeners(nav_elements) {
     });
   }
 }
+
+document.addEventListener("scroll", function() {
+  makeActiveOnScroll();
+});
 
 // the following will call the main function
 buildNav();
